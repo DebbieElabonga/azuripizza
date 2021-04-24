@@ -1,0 +1,12 @@
+body{
+    background-image: url(https://files.123freevectors.com/wp-content/original/147080-orange-and-white-blur-lights-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-navy {
+    background: linear-gradient(-60deg, #041d8b8c, #bb8b0952,#580318b6);
+}
+.min-vh-80 {
+    min-height: 80vh;
+}
