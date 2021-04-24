@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://files.123freevectors.com/wp-content/original/147080-orange-and-white-blur-lights-background.jpg);
+    background-image: url(../images/bgr.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,4 +9,61 @@ body{
 }
 .min-vh-80 {
     min-height: 80vh;
+}
+h2,h1{
+    font-family:'love ya like a sister', cursive;
+}
+.landing {
+    background: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.landing-text {
+    margin-top: 10%;
+}
+
+.landing-text h1, h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    
+}
+
+.landing-text h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 60px;
+}
+#push {
+    padding-top: 10%;
+}
+.welcome{
+    padding-top:30px;
+}
+.karibu-img {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 500px;
+    width: 400px;
+}
+.karibu-txt {
+    margin-top: 160px;
+}
+.pizz {
+    color: lawngreen;
+}
+.exc {
+    color: yellow;
+}
+#spantext {
+    color: yellow;
+}
+#menu {
+    font-family: 'Love Ya Like A Sister', cursive;  padding-top: 20px;
+    padding-top: 20px;
+}
+
+.menu-overlay {
+    background-image: url("../images/b4.jpg");
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
 }
