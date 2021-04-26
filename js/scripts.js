@@ -69,3 +69,29 @@ $(document).ready(function () {
         return { addr: addr, cost: cost };
     }
     
+    $("input#proceed").click(function () {
+
+        var sizeCost = getSize().cost ;
+        var sizeName = getSize().name ;
+        var crustCost = getCrust().cost ;
+        var crustName = getCrust().name ;
+        var toppingCost = getTopping().cost ;
+        var toppingName = getTopping().name ;
+        var number = $("input[type=number][name=noOfPizzas]").val() ;
+        var deliveryAddress = "Name: " + getDelivery().addr.name + ", court: " + getDelivery().addr.box + ", House: " + getDelivery().addr.town;
+        var deliveryCost = getDelivery().cost;
+         var total = (sizeCost + crustCost + toppingCost)*number + deliveryCost;
+         console.log(total);
+        var text ="<li>"+sizeName+": Ksh "+ sizeCost+"</li>"+
+        "<li>"+crustName+": Ksh "+ crustCost+"</li>"+
+        "<li>"+toppingName+": Ksh "+ toppingCost+"</li>"+
+        "<li> Number Of Pizzas"+": "+ number+"</li>"+
+        "<li> Delivery To<i>--> "+deliveryAddress+": Costs "+ deliveryCost+" Kenyan Shillings</i></li>"+
+        "<h3>Total = Kshs"+total+"</h3>";
+        console.log(text);
+        $("ol#items").html(text);
+        $("#totalscreen").html("Kshs "+total+"?")
+
+
+    });
+});
