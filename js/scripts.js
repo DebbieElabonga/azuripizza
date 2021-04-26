@@ -55,4 +55,17 @@ $(document).ready(function () {
         return topping;
     }   
     
+    let getDelivery = function () {
+        var cost = 0; var addr = { name: "Null", box: "Null", town: "Null" }
+        var n = $("input[type=radio][name=delivery]:checked").val();
+        if (n == "yes") {
+            var name = $("input[type=text][name=uname]").val();
+            var court = $("input[type=text][name= court]").val();
+            var House = $("input[type=text][name=House]").val();
+            var addr = { name: name, box: court, town: House }
+            var cost = (name.length + court.length + House.length) * 12;
+        }
+        //console.log({ addr: addr, cost: cost })
+        return { addr: addr, cost: cost };
+    }
     
